@@ -12,6 +12,7 @@
 		45675A6D20892A8500BBA213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45675A6B20892A8500BBA213 /* Main.storyboard */; };
 		45675A6F20892A8500BBA213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45675A6E20892A8500BBA213 /* Assets.xcassets */; };
 		45675A7220892A8500BBA213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45675A7020892A8500BBA213 /* LaunchScreen.storyboard */; };
+		678472D0B245E785BF3CB908 /* Pods_BusinessCheduleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD699B51F3BEDAF5117F8CD /* Pods_BusinessCheduleTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		45675A6E20892A8500BBA213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45675A7120892A8500BBA213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45675A7320892A8500BBA213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52D4CFAF01A09C46AC5E69F3 /* Pods-BusinessCheduleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCheduleTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusinessCheduleTest/Pods-BusinessCheduleTest.debug.xcconfig"; sourceTree = "<group>"; };
+		6E72D830C931E464F9C6BF0D /* Pods-BusinessCheduleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCheduleTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusinessCheduleTest/Pods-BusinessCheduleTest.release.xcconfig"; sourceTree = "<group>"; };
+		BBD699B51F3BEDAF5117F8CD /* Pods_BusinessCheduleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusinessCheduleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678472D0B245E785BF3CB908 /* Pods_BusinessCheduleTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ACA80A3A18ADA59A2ACFB31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52D4CFAF01A09C46AC5E69F3 /* Pods-BusinessCheduleTest.debug.xcconfig */,
+				6E72D830C931E464F9C6BF0D /* Pods-BusinessCheduleTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		44E56F5753A87975E41A91CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBD699B51F3BEDAF5117F8CD /* Pods_BusinessCheduleTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		45675A5B20892A8400BBA213 = {
 			isa = PBXGroup;
 			children = (
 				45675A6620892A8500BBA213 /* BusinessCheduleTest */,
 				45675A6520892A8500BBA213 /* Products */,
+				2ACA80A3A18ADA59A2ACFB31 /* Pods */,
+				44E56F5753A87975E41A91CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45675A7620892A8500BBA213 /* Build configuration list for PBXNativeTarget "BusinessCheduleTest" */;
 			buildPhases = (
+				4A8C9B21B152C7B5799AA9D6 /* [CP] Check Pods Manifest.lock */,
 				45675A6020892A8500BBA213 /* Sources */,
 				45675A6120892A8500BBA213 /* Frameworks */,
 				45675A6220892A8500BBA213 /* Resources */,
+				1DB5DA6C8AAA4C3CE502C88E /* [CP] Embed Pods Frameworks */,
+				9E9AF4692F3300087698C668 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DB5DA6C8AAA4C3CE502C88E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BusinessCheduleTest/Pods-BusinessCheduleTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusinessCheduleTest/Pods-BusinessCheduleTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A8C9B21B152C7B5799AA9D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BusinessCheduleTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E9AF4692F3300087698C668 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusinessCheduleTest/Pods-BusinessCheduleTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45675A6020892A8500BBA213 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		45675A7720892A8500BBA213 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D4CFAF01A09C46AC5E69F3 /* Pods-BusinessCheduleTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +368,7 @@
 		};
 		45675A7820892A8500BBA213 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E72D830C931E464F9C6BF0D /* Pods-BusinessCheduleTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
